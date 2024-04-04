@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+        android:id="@+id/g1">
+        <item
+            android:title="Home"
+            android:id="@+id/nav_home"
+            android:icon="@drawable/icon"
+            />
+        <item
+            android:title="Settings"
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/icon"
+            />
+        <item
+            android:title="Share"
+            android:id="@+id/nav_share"
+            android:icon="@drawable/icon"
+            />
+        <item
+            android:title="Boomerang Effect"
+            android:id="@+id/nav_boomerang"
+            android:icon="@drawable/icon"
+            />
+    </group>
+
+    <group
+        android:id="@+id/g2">
+
+        <item
+            android:title="Cuisines"
+            android:id="@+id/navCuisines"
+            android:icon="@drawable/icon"/>
+        <item
+            android:title="Notifications"
+            android:id="@+id/navNotifications"
+            android:icon="@drawable/icon"/>
+    </group>
+
+    <item
+        android:title="">
+        <menu>
+            <item
+                android:title="Logout"
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/icon"
+                />
+        </menu>
+    </item>
+
+
+</menu>

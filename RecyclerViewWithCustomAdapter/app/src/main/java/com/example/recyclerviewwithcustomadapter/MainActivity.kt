@@ -47,17 +47,15 @@ class MainActivity : AppCompatActivity() {
         )
 
         dataList = arrayListOf<DataClass>()
-        adapter = CustomAdapter(this, dataList)
+
+
+        val adapter = CustomAdapter(this, dataList)
         binding?.recyclerView?.adapter = adapter
         binding?.recyclerView?.layoutManager = LinearLayoutManager(this)
         binding?.recyclerView?.setHasFixedSize(true)
-
         for (i in imageId.indices) {
-            val news = DataClass(imageId[i], aboutId[i])
-            dataList.add(news)
+//            val news = DataClass(imageId[i], aboutId[i])
+            dataList.add(DataClass(imageId[i], aboutId[i]))
         }
-        val adapter = CustomAdapter(this, dataList)
-        binding?.recyclerView?.adapter = adapter
-
     }
 }

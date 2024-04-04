@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragment13">
+    <fragment
+        android:id="@+id/fragment13"
+        android:name="com.example.navigation.Fragment1.Fragment1"
+        android:label="fragment_1"
+        tools:layout="@layout/fragment_1" />
+    <fragment
+        android:id="@+id/fragment23"
+        android:name="com.example.navigation.Fragment2"
+        android:label="fragment_2"
+        tools:layout="@layout/fragment_2" />
+    <fragment
+        android:id="@+id/fragment33"
+        android:name="com.example.navigation.Fragment3"
+        android:label="fragment_3"
+        tools:layout="@layout/fragment_3" />
+    <fragment
+        android:id="@+id/cuisines"
+        android:name="com.example.navigation.Fragment1.FragmentCuisines"
+        android:label="fragment_cuisines"
+        tools:layout="@layout/fragment_cuisines" />
+    <fragment
+        android:id="@+id/boomerangFragment"
+        android:name="com.example.navigation.BoomerangFragment"
+        android:label="fragment_boomerang"
+        tools:layout="@layout/fragment_boomerang" />
+</navigation>

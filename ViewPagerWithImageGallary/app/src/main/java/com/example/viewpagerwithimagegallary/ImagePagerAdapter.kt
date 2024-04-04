@@ -11,7 +11,6 @@ import com.bumptech.glide.Glide
 
 class ImagePagerAdapter(private val context: Context, private val imageUrls: List<String>) :
     PagerAdapter() {
-
     override fun instantiateItem(container: ViewGroup, position: Int): Any {
         val view = LayoutInflater.from(context).inflate(R.layout.each_item, container, false)
         val imageView = view.findViewById<ImageView>(R.id.imageView)
@@ -34,6 +33,8 @@ class ImagePagerAdapter(private val context: Context, private val imageUrls: Lis
     override fun isViewFromObject(view: View, obj: Any): Boolean {
         return view == obj
     }
+
+
 }
 
 
